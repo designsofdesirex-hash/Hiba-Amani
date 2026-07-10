@@ -35,7 +35,8 @@ html {
 }
 
 body {
-  background: var(--black);
+  background: radial-gradient(circle at top center, #1c0a0a 0%, var(--black) 60%, var(--black) 100%);
+  background-attachment: fixed;
   color: var(--white);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -126,8 +127,9 @@ a {
 }
 
 .nav.nav-solid {
-  background: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(20, 5, 5, 0.95);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(138, 3, 3, 0.15);
 }
 
 .nav-brand {
@@ -396,11 +398,11 @@ a {
 }
 
 .section--dark {
-  background: var(--black);
+  background: linear-gradient(to bottom, transparent, rgba(138, 3, 3, 0.03) 50%, transparent);
 }
 
 .section--darker {
-  background: var(--black-light);
+  background: linear-gradient(to bottom, var(--black-light), rgba(20, 5, 5, 0.8));
 }
 
 .section-inner {
@@ -1534,8 +1536,8 @@ a {
    ============================================================ */
 
 .footer {
-  background: var(--black-light);
-  border-top: 1px solid var(--white-faint);
+  background: linear-gradient(to top, #0a0202, var(--black-light));
+  border-top: 1px solid rgba(138, 3, 3, 0.3);
   padding: 80px 0 30px;
 }
 
